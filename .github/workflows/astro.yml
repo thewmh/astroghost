@@ -38,12 +38,17 @@ jobs:
       - name: Install Ghost CLI
         id: install-ghost-cli
         run: npm install ghost-cli@latest -g
-      - name: Ghost Install
-        id: ghost-install
-        run: ghost install --no-setup-linux-user --no-setup-nginx --no-setup-ssl --no-setup-systemd
-      - name: Make New Ghost Config
-        id: make-new-ghost-config
-        run: ghost config
+      - name: Resolve symlink
+        run: |
+          SYMLINK_PATH='./current' # Replace with your symlink path
+          RESOLVED_PATH=$(readlink -f $SYMLINK_PATH)
+          echo "Resolved path: $RESOLVED_PATH"
+          echo "RESOLVED_PATH=$RESOLVED_PATH" >> $GITHUB_ENV
+
+      - name: Use resolved path
+        run: |
+          echo "Using resolved path: $RESOLVED_PATH"
+          # You can add commands here that use the resolved path
       - name: Run Ghost
         id: run-ghost
         run: ghost run
