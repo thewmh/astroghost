@@ -46,7 +46,7 @@ jobs:
           # Remove the existing symlink if it exists
           rm -f ./current
           # Create a new symlink
-          ln -s /versions/5.79.4 ./current
+          ln -s ./versions/5.79.4 ./current
       - name: List files to verify symlink
         run: ls -l ./current
       - name: Run Ghost
