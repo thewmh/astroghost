@@ -7,7 +7,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/Users/wharrison/Development/astroghost/content/data/ghost-dev.db"
+      "filename": "content/data/ghost-dev.db"
     }
   },
   "mail": {
