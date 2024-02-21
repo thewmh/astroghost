@@ -16,19 +16,19 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v2
+      - name: List Files
+        run: ls -la
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
-        run: ls -la
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./astro
+          publish_dir: ./astro/dist
