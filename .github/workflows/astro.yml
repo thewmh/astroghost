@@ -33,11 +33,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: List files
-        run: |
-            pwd
-            ls -la
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: astro/dist # The folder the action should deploy.
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./astro/dist # The folder the action should deploy.
