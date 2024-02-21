@@ -50,7 +50,7 @@ jobs:
       - name: List files to verify symlink
         run: ls -l ./current
       - name: Install Node Modules in current
-        run: cd versions/5.79.4 && npm i
+        run: cd versions/5.79.4 && npm i --legacy-peer-deps
       - name: Run Ghost
         id: run-ghost
         run: ghost run
