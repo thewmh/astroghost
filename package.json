@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "run-build": "ghost start && cd astro && npm run build && ghost stop"
-  }
-}
