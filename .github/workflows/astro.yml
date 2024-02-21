@@ -42,7 +42,7 @@ jobs:
         run: ls -la
       - name: Resolve symlink
         run: |
-          SYMLINK_PATH='./current' # Replace with your symlink path
+          SYMLINK_PATH='current/' # Replace with your symlink path
           RESOLVED_PATH=$(readlink -f $SYMLINK_PATH)
           echo "Resolved path: $RESOLVED_PATH"
           echo "RESOLVED_PATH=$RESOLVED_PATH" >> $GITHUB_ENV
