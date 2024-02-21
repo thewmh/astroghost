@@ -43,7 +43,7 @@ jobs:
         run: ghost config
       - name: List files
         run: ls -la
-      - run: echo "RESOLVED_PATH=$(readlink -f config)" >> $GITHUB_ENV
+      - run: echo RESOLVED_PATH=$(readlink -f config) >> $GITHUB_ENV
       - name: Resolve symlink
         run: |
           SYMLINK_PATH='current/' # Replace with your symlink path
