@@ -105,3 +105,46 @@
 {"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost is shutting down","time":"2024-02-21T14:17:18.924Z","v":0}
 {"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost has shut down","time":"2024-02-21T14:17:18.925Z","v":0}
 {"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost was running for a few seconds","time":"2024-02-21T14:17:18.925Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ghost is running in development...","time":"2024-02-21T14:20:30.821Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Listening on: 127.0.0.1:2368","time":"2024-02-21T14:20:30.822Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Url configured as: http://localhost:2368/","time":"2024-02-21T14:20:30.822Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ctrl+C to shut down","time":"2024-02-21T14:20:30.822Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ghost server started in 0.432s","time":"2024-02-21T14:20:30.822Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Database is in a ready state.","time":"2024-02-21T14:20:30.918Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ghost database ready in 0.531s","time":"2024-02-21T14:20:30.921Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":40,"version":"5.79.4","msg":"Missing mail.from config, falling back to a generated email address. Please update your config file and set a valid from address","time":"2024-02-21T14:20:31.107Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:20:32.012Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Scheduling job mentions-email-report at 27 46 * * * *. Next run on: Wed Feb 21 2024 09:46:27 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:20:32.017Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:20:32.254Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Scheduling job clean-expired-comped at 32 47 2 * * *. Next run on: Thu Feb 22 2024 02:47:32 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:20:32.256Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:20:32.258Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Scheduling job clean-tokens at 47 41 13 * * *. Next run on: Wed Feb 21 2024 13:41:47 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:20:32.259Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ghost booted in 1.895s","time":"2024-02-21T14:20:32.285Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:20:32.286Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Scheduling job update-check at 17 14 1 * * *. Next run on: Thu Feb 22 2024 01:14:17 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:20:32.287Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Running milestone emails job on Wed Feb 21 2024 09:20:37 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:20:32.291Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":30,"version":"5.79.4","msg":"Ghost URL Service Ready in 2.159s","time":"2024-02-21T14:20:32.549Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":40,"version":"5.79.4","msg":"Ghost is shutting down","time":"2024-02-21T14:20:37.100Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":40,"version":"5.79.4","msg":"Ghost has shut down","time":"2024-02-21T14:20:37.101Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":59395,"level":40,"version":"5.79.4","msg":"Ghost was running for a few seconds","time":"2024-02-21T14:20:37.101Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ghost is running in development...","time":"2024-02-21T14:51:37.211Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Listening on: 127.0.0.1:2368","time":"2024-02-21T14:51:37.212Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Url configured as: http://localhost:2368/","time":"2024-02-21T14:51:37.212Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ctrl+C to shut down","time":"2024-02-21T14:51:37.212Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ghost server started in 0.483s","time":"2024-02-21T14:51:37.213Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Database is in a ready state.","time":"2024-02-21T14:51:37.313Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ghost database ready in 0.586s","time":"2024-02-21T14:51:37.316Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":40,"version":"5.79.4","msg":"Missing mail.from config, falling back to a generated email address. Please update your config file and set a valid from address","time":"2024-02-21T14:51:37.517Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:51:38.469Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Scheduling job mentions-email-report at 42 52 * * * *. Next run on: Wed Feb 21 2024 09:52:42 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:51:38.474Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:51:38.728Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Scheduling job clean-expired-comped at 54 4 0 * * *. Next run on: Thu Feb 22 2024 00:04:54 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:51:38.730Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:51:38.732Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Scheduling job clean-tokens at 54 10 18 * * *. Next run on: Wed Feb 21 2024 18:10:54 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:51:38.733Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ghost booted in 2.026s","time":"2024-02-21T14:51:38.756Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:51:38.757Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Scheduling job update-check at 27 16 4 * * *. Next run on: Thu Feb 22 2024 04:16:27 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:51:38.759Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Running milestone emails job on Wed Feb 21 2024 09:51:43 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:51:38.762Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Ghost URL Service Ready in 2.293s","time":"2024-02-21T14:51:39.024Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","worker":{"resourceLimits":{"maxYoungGenerationSizeMb":48,"maxOldGenerationSizeMb":4096,"codeRangeSizeMb":0,"stackSizeMb":4},"threadId":1},"msg":"Worker for job \"mentions-email-report\" online","time":"2024-02-21T14:52:42.532Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":60258,"level":30,"version":"5.79.4","msg":"Worker for job mentions-email-report sent a message: done","time":"2024-02-21T14:52:42.536Z","v":0}
