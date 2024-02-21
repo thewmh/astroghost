@@ -1,5 +1,6 @@
 ---
 import { ghostClient } from '../../lib/ghost';
+import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths() {
     const posts = await ghostClient.posts
         .browse({
@@ -25,19 +26,12 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const {title, feature_image} = post;
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>{post.title}</title>
-    </head>
+<Layout title={post.title as string}>
     <body>
+      <h1>{post.title}</h1>
       {feature_image && (
         <img src={feature_image} alt={title} />
       )}
-
-        <h1>{post.title}</h1>
-        <p>{post.reading_time} min read</p>
-
-        <Fragment set:html={post.html} />
+      <Fragment set:html={post.html} />
     </body>
-</html>
+</Layout>

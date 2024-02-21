@@ -1,4 +1,5 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import { ghostClient } from '../lib/ghost';
 export async function getStaticPaths() {
     const posts = await ghostClient.pages
@@ -23,19 +24,12 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const {title, feature_image, reading_time, html} = post;
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>{title}</title>
-    </head>
-    <body>
-        {feature_image && (
-            <img src={feature_image} alt={title} />
-        )}
-
-        <h1>{title}</h1>
-        <p>{reading_time} min read</p>
-
-        <Fragment set:html={html} />
-    </body>
-</html>
+<Layout title={title as string}>
+    {feature_image && (
+      <img src={feature_image} alt={title} />
+    )}
+    <h1>{title}</h1>
+    <p>{reading_time} min read</p>
+    <Fragment set:html={html} />
+  </body>
+</Layout>

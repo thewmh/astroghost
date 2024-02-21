@@ -30,15 +30,13 @@ import type { PostOrPage } from '@tryghost/content-api';
               <Card className='w-1/3'>
                 {post.feature_image && (
                   <CardHeader>
-                    <Image class="aspect-square" width="1000" height="1000" src={post.feature_image as string} alt={post.title as string}/>
+                    <a class="hover:text-fuchsia-800 hover:underline text-xl font-bold inline-block mb-4 group relative" href={`/paintings/${post.slug}`}>
+                      <div class="w-full h-full bg-white absolute left-0 top-0 opacity-0 group-hover:opacity-60 transition-all"></div>
+                      <Image class="aspect-square" width="1000" height="1000" src={post.feature_image as string} alt={post.title as string}/>
+                      <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all"> {post.title} </CardTitle>
+                    </a>
                   </CardHeader>
                 )}
-                <CardContent>
-                  <a class="hover:text-fuchsia-800 hover:underline text-xl font-bold inline-block mb-4" href={`/paintings/${post.slug}`}>
-                    <CardTitle> {post.title} </CardTitle>
-                  </a>
-                  <CardDescription>{post.excerpt}</CardDescription>
-                </CardContent>
               </Card>
             )
           }
