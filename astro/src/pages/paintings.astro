@@ -12,9 +12,7 @@ const posts = await ghostClient.posts
     if (!posts) return;
     posts.sort((a:PostOrPage, b:PostOrPage) => new Date(a.created_at as string).getTime() - new Date(b.created_at as string).getTime())
 import { 
-	Card, 
-  CardContent,
-  CardDescription,
+	Card,
   CardHeader,
   CardTitle, } from '../components/ui/card';
 import Image from 'astro/components/Image.astro';
@@ -29,11 +27,11 @@ import type { PostOrPage } from '@tryghost/content-api';
             return (
               <Card className='w-1/3'>
                 {post.feature_image && (
-                  <CardHeader>
-                    <a class="hover:text-fuchsia-800 hover:underline text-xl font-bold inline-block mb-4 group relative" href={`/paintings/${post.slug}`}>
+                  <CardHeader className='p-0'>
+                    <a class="text-white hover:text-slate-600 hover:underline inline-block group relative" href={`/paintings/${post.slug}`}>
                       <div class="w-full h-full bg-white absolute left-0 top-0 opacity-0 group-hover:opacity-60 transition-all"></div>
                       <Image class="aspect-square" width="1000" height="1000" src={post.feature_image as string} alt={post.title as string}/>
-                      <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all"> {post.title} </CardTitle>
+                      <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 w-max transition-all text-4xl font-bold"> {post.title} </CardTitle>
                     </a>
                   </CardHeader>
                 )}

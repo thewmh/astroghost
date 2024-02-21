@@ -21,6 +21,7 @@ posts.map((post) => {
 import Navigation from '../components/Navigation';
 
 const { classes, title } = Astro.props;
+const currentUrl = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -35,7 +36,7 @@ const { classes, title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body class={`${classes} p-10`} transition:animate="none">
-		<Navigation data={posts}/>
+		<Navigation data={posts} currentUrl={currentUrl} />
 		<div transition:animate={fade({ duration: '.5s' })}>
 			<slot/>
 		</div>
