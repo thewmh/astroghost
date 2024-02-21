@@ -1,0 +1,107 @@
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ghost is running in development...","time":"2024-02-21T14:17:11.939Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Listening on: 127.0.0.1:2368","time":"2024-02-21T14:17:11.940Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Url configured as: http://localhost:2368/","time":"2024-02-21T14:17:11.940Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ctrl+C to shut down","time":"2024-02-21T14:17:11.940Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ghost server started in 0.517s","time":"2024-02-21T14:17:11.941Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Database state requires initialisation.","time":"2024-02-21T14:17:12.030Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: newsletters","time":"2024-02-21T14:17:12.208Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: posts","time":"2024-02-21T14:17:12.234Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: posts_meta","time":"2024-02-21T14:17:12.271Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: users","time":"2024-02-21T14:17:12.273Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: posts_authors","time":"2024-02-21T14:17:12.275Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: roles","time":"2024-02-21T14:17:12.276Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: roles_users","time":"2024-02-21T14:17:12.277Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: permissions","time":"2024-02-21T14:17:12.278Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: permissions_users","time":"2024-02-21T14:17:12.280Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: permissions_roles","time":"2024-02-21T14:17:12.280Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: settings","time":"2024-02-21T14:17:12.281Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: tags","time":"2024-02-21T14:17:12.283Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: posts_tags","time":"2024-02-21T14:17:12.284Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: invites","time":"2024-02-21T14:17:12.285Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: brute","time":"2024-02-21T14:17:12.287Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: sessions","time":"2024-02-21T14:17:12.288Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: integrations","time":"2024-02-21T14:17:12.289Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: webhooks","time":"2024-02-21T14:17:12.290Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: api_keys","time":"2024-02-21T14:17:12.291Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: mobiledoc_revisions","time":"2024-02-21T14:17:12.292Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: post_revisions","time":"2024-02-21T14:17:12.294Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members","time":"2024-02-21T14:17:12.295Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: products","time":"2024-02-21T14:17:12.298Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: offers","time":"2024-02-21T14:17:12.300Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: benefits","time":"2024-02-21T14:17:12.302Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: products_benefits","time":"2024-02-21T14:17:12.303Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_products","time":"2024-02-21T14:17:12.304Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: posts_products","time":"2024-02-21T14:17:12.304Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_created_events","time":"2024-02-21T14:17:12.305Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_cancel_events","time":"2024-02-21T14:17:12.306Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_payment_events","time":"2024-02-21T14:17:12.307Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_login_events","time":"2024-02-21T14:17:12.308Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_email_change_events","time":"2024-02-21T14:17:12.308Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_status_events","time":"2024-02-21T14:17:12.309Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_product_events","time":"2024-02-21T14:17:12.310Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_paid_subscription_events","time":"2024-02-21T14:17:12.311Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: labels","time":"2024-02-21T14:17:12.311Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_labels","time":"2024-02-21T14:17:12.313Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_stripe_customers","time":"2024-02-21T14:17:12.314Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: subscriptions","time":"2024-02-21T14:17:12.315Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_stripe_customers_subscriptions","time":"2024-02-21T14:17:12.316Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_subscription_created_events","time":"2024-02-21T14:17:12.318Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: offer_redemptions","time":"2024-02-21T14:17:12.319Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_subscribe_events","time":"2024-02-21T14:17:12.319Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: donation_payment_events","time":"2024-02-21T14:17:12.320Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: stripe_products","time":"2024-02-21T14:17:12.321Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: stripe_prices","time":"2024-02-21T14:17:12.322Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: actions","time":"2024-02-21T14:17:12.323Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: emails","time":"2024-02-21T14:17:12.324Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: email_batches","time":"2024-02-21T14:17:12.325Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: email_recipients","time":"2024-02-21T14:17:12.326Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: email_recipient_failures","time":"2024-02-21T14:17:12.329Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: tokens","time":"2024-02-21T14:17:12.329Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: snippets","time":"2024-02-21T14:17:12.331Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: custom_theme_settings","time":"2024-02-21T14:17:12.332Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_newsletters","time":"2024-02-21T14:17:12.333Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: comments","time":"2024-02-21T14:17:12.334Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: comment_likes","time":"2024-02-21T14:17:12.334Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: comment_reports","time":"2024-02-21T14:17:12.335Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: jobs","time":"2024-02-21T14:17:12.336Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: redirects","time":"2024-02-21T14:17:12.337Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_click_events","time":"2024-02-21T14:17:12.337Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: members_feedback","time":"2024-02-21T14:17:12.338Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: suppressions","time":"2024-02-21T14:17:12.339Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: email_spam_complaint_events","time":"2024-02-21T14:17:12.340Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: mentions","time":"2024-02-21T14:17:12.341Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: milestones","time":"2024-02-21T14:17:12.342Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: temp_mail_events","time":"2024-02-21T14:17:12.343Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: collections","time":"2024-02-21T14:17:12.343Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: collections_posts","time":"2024-02-21T14:17:12.344Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: recommendations","time":"2024-02-21T14:17:12.346Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: recommendation_click_events","time":"2024-02-21T14:17:12.347Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Creating table: recommendation_subscribe_events","time":"2024-02-21T14:17:12.347Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Collection","time":"2024-02-21T14:17:12.537Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Product","time":"2024-02-21T14:17:12.539Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Newsletter","time":"2024-02-21T14:17:12.541Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Tag","time":"2024-02-21T14:17:12.543Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Permission","time":"2024-02-21T14:17:12.544Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Post","time":"2024-02-21T14:17:12.603Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Model: Integration","time":"2024-02-21T14:17:12.864Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Relation: Role to Permission","time":"2024-02-21T14:17:12.877Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Relation: Post to Tag","time":"2024-02-21T14:17:12.939Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Database is in a ready state.","time":"2024-02-21T14:17:12.979Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ghost database ready in 1.557s","time":"2024-02-21T14:17:12.980Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Missing mail.from config, falling back to a generated email address. Please update your config file and set a valid from address","time":"2024-02-21T14:17:13.383Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:17:14.270Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Scheduling job mentions-email-report at 31 19 * * * *. Next run on: Wed Feb 21 2024 09:19:31 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:17:14.277Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Adding one-off job to queue with current length = 0 called 'members-migrations'","time":"2024-02-21T14:17:14.515Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Stripe not configured - skipping migrations","time":"2024-02-21T14:17:14.524Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ghost URL Service Ready in 3.351s","time":"2024-02-21T14:17:14.774Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:17:15.003Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Scheduling job clean-expired-comped at 10 8 5 * * *. Next run on: Thu Feb 22 2024 05:08:10 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:17:15.013Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:17:15.021Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Scheduling job clean-tokens at 46 37 17 * * *. Next run on: Wed Feb 21 2024 17:37:46 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:17:15.026Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Ghost booted in 3.609s","time":"2024-02-21T14:17:15.032Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Adding offloaded job to the queue","time":"2024-02-21T14:17:15.034Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Scheduling job update-check at 45 12 5 * * *. Next run on: Thu Feb 22 2024 05:12:45 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:17:15.039Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":30,"version":"5.79.4","msg":"Running milestone emails job on Wed Feb 21 2024 09:17:20 GMT-0500 (Eastern Standard Time)","time":"2024-02-21T14:17:15.049Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost is shutting down","time":"2024-02-21T14:17:18.924Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost has shut down","time":"2024-02-21T14:17:18.925Z","v":0}
+{"name":"Log","hostname":"YXXVDHV24W","pid":58745,"level":40,"version":"5.79.4","msg":"Ghost was running for a few seconds","time":"2024-02-21T14:17:18.925Z","v":0}
