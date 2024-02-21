@@ -38,6 +38,9 @@ jobs:
       - name: Install Ghost CLI
         id: install-ghost-cli
         run: npm install ghost-cli@latest -g
+      - name: Update Ghost Config
+        id: update-ghost-config
+        run: ghost config
       - name: List files
         run: ls -la
       - name: Resolve symlink
