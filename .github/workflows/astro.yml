@@ -35,7 +35,7 @@ jobs:
     steps:
       - name: List files
         run: ls -la
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: astro/dist # The folder the action should deploy.
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: astro/dist # The folder the action should deploy.
