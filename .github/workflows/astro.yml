@@ -38,6 +38,9 @@ jobs:
       - name: Install Ghost CLI
         id: install-ghost-cli
         run: npm install ghost-cli@latest -g
+      - name: Ghost Install
+        id: ghost-install
+        run: ghost install --no-setup-linux-user --no-setup-nginx --no-setup-ssl --no-setup-systemd
       - name: Make New Ghost Config
         id: make-new-ghost-config
         run: ghost config
