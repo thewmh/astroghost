@@ -29,28 +29,11 @@ env:
   # BUILD_PATH: subfolder
 
 jobs:
-  build:
-    name: Build
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install Ghost CLI
-        id: install-ghost-cli
-        run: npm install ghost-cli@latest -g
-      - name: Update Ghost Config
-        id: update-ghost-config
-        run: ghost config
-      - name: Update symlink
-        run: |
-          # Remove the existing symlink if it exists
-          rm -f ./current
-          # Create a new symlink
-          ln -s ./versions/5.79.4 ./current
-      - name: List files to verify symlink
-        run: ls -l ./current
-      - name: Install Node Modules in current
-        run: cd versions/5.79.4 && npm i --legacy-peer-deps
-      - name: Run Ghost
-        id: run-ghost
-        run: ghost run
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: astro/dist # The folder the action should deploy.
