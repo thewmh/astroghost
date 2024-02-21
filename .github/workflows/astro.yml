@@ -41,37 +41,14 @@ jobs:
       - name: Update Ghost Config
         id: update-ghost-config
         run: ghost config
-      - name: Debugging environment and symlink
+      - name: Update symlink
         run: |
-          pwd
-          ls -la
-          if [ -L "./current" ]; then
-            echo "./current is a symlink."
-            ls -la ./current
-            file ./current
-          else
-            echo "./current is not a symlink or does not exist."
-            exit 1
-          fi
-          TARGET=$(readlink ./current)
-          echo "Symlink target: $TARGET"
-          if [ -f "$TARGET" ] || [ -d "$TARGET" ]; then
-            echo "Target exists."
-          else
-            echo "Target does not exist."
-            exit 1
-          fi
-      - name: Resolve symlink
-        run: |
-          SYMLINK_PATH='current/' # Replace with your symlink path
-          RESOLVED_PATH=$(readlink -f $SYMLINK_PATH)
-          echo "Resolved path: $RESOLVED_PATH"
-          echo "RESOLVED_PATH=$RESOLVED_PATH" >> $GITHUB_ENV
-
-      - name: Use resolved path
-        run: |
-          echo "Using resolved path: $RESOLVED_PATH"
-          # You can add commands here that use the resolved path
+          # Remove the existing symlink if it exists
+          rm -f ./current
+          # Create a new symlink
+          ln -s /versions/5.79.4 ./current
+      - name: List files to verify symlink
+        run: ls -l ./current
       - name: Run Ghost
         id: run-ghost
         run: ghost run
