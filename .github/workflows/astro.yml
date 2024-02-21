@@ -35,6 +35,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Detect package manager
-        id: detect-package-manager
+      - name: Install Ghost CLI
+        id: install-ghost-cli
+        run: npm install ghost-cli@latest -g
+      - name: Run Ghost
+        id: run-ghost
         run: ghost start
