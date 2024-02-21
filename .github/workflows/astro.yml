@@ -43,6 +43,23 @@ jobs:
         run: ghost config
       - name: List files
         run: ls -la
+      - name: Debugging symlink resolution
+        run: |
+          SYMLINK_PATH='./current'
+          echo "Symlink path: $SYMLINK_PATH"
+          if [ -L "$SYMLINK_PATH" ]; then
+            echo "$SYMLINK_PATH exists."
+          else
+            echo "$SYMLINK_PATH does not exist."
+            exit 1
+          fi
+          RESOLVED_PATH=$(readlink -f $SYMLINK_PATH)
+          echo "Resolved path: $RESOLVED_PATH"
+          if [ -z "$RESOLVED_PATH" ]; then
+            echo "Resolved path is empty."
+            exit 1
+          fi
+          echo "RESOLVED_PATH=$RESOLVED_PATH" >> $GITHUB_ENV
       - name: Resolve symlink
         run: |
           SYMLINK_PATH='current/' # Replace with your symlink path
