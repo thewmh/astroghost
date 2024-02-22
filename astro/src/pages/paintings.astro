@@ -1,4 +1,5 @@
 ---
+import dynamicViteAssetImport from '../lib/dynamicViteAssetImport';
 import Layout from '../layouts/Layout.astro';
 import { ghostClient } from '../lib/ghost';
 const posts = await ghostClient.posts
@@ -24,13 +25,15 @@ import type { PostOrPage } from '@tryghost/content-api';
       {posts && (
         posts.map((post: PostOrPage) => {
           if (!post.feature_image) return;
+          const urlObj = new URL(post.feature_image as string);
+          const imgSrc = `../../../src/assets${urlObj.pathname.replace('/content/images', '')}`;
             return (
               <Card className='w-1/3'>
                 {post.feature_image && (
                   <CardHeader className='p-0'>
                     <a class="text-white hover:text-slate-600 hover:underline inline-block group relative" href={`/paintings/${post.slug}`}>
                       <div class="w-full h-full bg-white absolute left-0 top-0 opacity-0 group-hover:opacity-60 transition-all"></div>
-                      <Image class="aspect-square" width="1000" height="1000" src={post.feature_image as string} alt={post.title as string}/>
+                      <Image class="aspect-square" width="1000" height="1000" src={dynamicViteAssetImport(imgSrc)} alt={post.title as string}/>
                       <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 w-max transition-all text-4xl font-bold"> {post.title} </CardTitle>
                     </a>
                   </CardHeader>

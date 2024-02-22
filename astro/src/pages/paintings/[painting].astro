@@ -1,5 +1,7 @@
 ---
+import dynamicViteAssetImport from '../../lib/dynamicViteAssetImport';
 import { ghostClient } from '../../lib/ghost';
+import Image from 'astro/components/Image.astro';
 import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths() {
     const posts = await ghostClient.posts
@@ -25,12 +27,14 @@ export async function getStaticPaths() {
 }
 const { post } = Astro.props;
 const {title, feature_image} = post;
+const urlObj = new URL(feature_image as string);
+const imgSrc = `../../../src/assets${urlObj.pathname.replace('/content/images', '')}`;
 ---
 <Layout title={post.title as string}>
     <body>
       <!-- <h1>{post.title}</h1> -->
       {feature_image && (
-        <img src={feature_image} alt={title} />
+        <Image src={dynamicViteAssetImport(imgSrc)} alt={title as string}/>
       )}
       <Fragment set:html={post.html} />
     </body>
