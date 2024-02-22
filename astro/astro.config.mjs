@@ -2,15 +2,14 @@ import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 
 import tailwind from "@astrojs/tailwind";
-import copy from 'rollup-plugin-copy';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
   build: {
-    assetsPrefix: '.',
+    // assetsPrefix: '.',
   },
-  base: './',
+  // base: './',
   vite: {
     // build: {
     //   rollupOptions: {
