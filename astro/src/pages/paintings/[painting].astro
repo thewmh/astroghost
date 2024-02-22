@@ -29,10 +29,10 @@ const { post } = Astro.props;
 const {title, feature_image} = post;
 const urlObj = new URL(feature_image as string);
 const imgSrc = `../../../src/assets${urlObj.pathname.replace('/content/images', '')}`;
+
 ---
 <Layout title={post.title as string}>
     <body>
-      <!-- <h1>{post.title}</h1> -->
       {feature_image && (
         <Image src={dynamicViteAssetImport(imgSrc)} alt={title as string}/>
       )}
