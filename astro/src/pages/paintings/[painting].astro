@@ -32,10 +32,10 @@ const imgSrc = `../../../src/assets${urlObj.pathname.replace('/content/images', 
 
 ---
 <Layout title={post.title as string}>
-    <body>
+    <div class="flex justify-center items-center">
       {feature_image && (
-        <Image src={dynamicViteAssetImport(imgSrc)} alt={title as string}/>
+        <Image src={dynamicViteAssetImport(imgSrc)} alt={title as string} width="600" height="600"/>
       )}
       <Fragment set:html={post.html} />
-    </body>
+    </div>
 </Layout>
