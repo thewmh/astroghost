@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
 import { ghostClient } from '../lib/ghost';
 const page = await ghostClient.pages
   .read({
@@ -8,11 +9,11 @@ const page = await ghostClient.pages
   .catch((err) => {
       console.error(err);
   });
-  if (!page) return;
+if (!page) return;
 ---
 
-<Layout title={page.title as string} classes="text-9xl font-extrabold break-all tracking-tighter">
-  <section>
+<Layout>
+  <!-- <section>
     <Fragment set:html={page.html} />
-  </section>
+  </section> -->
 </Layout>

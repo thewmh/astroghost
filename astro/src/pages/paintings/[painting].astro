@@ -4,26 +4,26 @@ import { ghostClient } from '../../lib/ghost';
 import Image from 'astro/components/Image.astro';
 import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths() {
-    const posts = await ghostClient.posts
-        .browse({
-            limit: 'all',
-            filter: 'tag:painting'
-        })
-        .catch((err) => {
-            console.error(err);
-        });
-    if (!posts) return;
-    return posts.map((post) => {
-      if (!post.feature_image) return;
-        return {
-            params: {
-                painting: post.slug,
-            },
-            props: {
-                post: post,
-            },
-        };
-    });
+  const posts = await ghostClient.posts
+      .browse({
+          limit: 'all',
+          filter: 'tag:painting'
+      })
+      .catch((err) => {
+          console.error(err);
+      });
+  if (!posts) return;
+  return posts.map((post) => {
+    if (!post.feature_image) return;
+    return {
+      params: {
+        painting: post.slug,
+      },
+      props: {
+        post: post,
+      },
+    };
+  });
 }
 const { post } = Astro.props;
 const {title, feature_image} = post;

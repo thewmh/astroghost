@@ -19,7 +19,7 @@ import {
 import Image from 'astro/components/Image.astro';
 import type { PostOrPage } from '@tryghost/content-api';
 ---
-<Layout title="Purported Art - Paintings">
+<Layout title="Paintings">
   <body class="flex justify-center gap-4">
     <>
       {posts && (
@@ -28,13 +28,13 @@ import type { PostOrPage } from '@tryghost/content-api';
           const urlObj = new URL(post.feature_image as string);
           const imgSrc = `../../../src/assets${urlObj.pathname.replace('/content/images', '')}`;
             return (
-              <Card className='w-1/3'>
+              <Card className='md:w-1/3'>
                 {post.feature_image && (
                   <CardHeader className='p-0'>
                     <a class="text-white hover:text-slate-600 hover:underline inline-block group relative" href={`/paintings/${post.slug}`}>
                       <div class="w-full h-full bg-white absolute left-0 top-0 opacity-0 group-hover:opacity-60 transition-all"></div>
                       <Image class="aspect-square" width="1000" height="1000" src={dynamicViteAssetImport(imgSrc)} alt={post.title as string}/>
-                      <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 w-max transition-all text-4xl font-bold"> {post.title} </CardTitle>
+                      <CardTitle className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 w-max transition-all md:text-4xl font-bold"> {post.title} </CardTitle>
                     </a>
                   </CardHeader>
                 )}

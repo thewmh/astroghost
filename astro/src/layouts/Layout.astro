@@ -1,23 +1,37 @@
 ---
 interface Props {
-	title: string;
+	title?: string;
 	classes?: string;
 }
+
 import { ViewTransitions } from 'astro:transitions';
 import { fade } from 'astro:transitions';
 import { ghostClient } from '../lib/ghost';
-const posts = await ghostClient.pages
+const pages = await ghostClient.pages
 		.browse()
 		.catch((err) => {
 				console.error(err);
 		});
-if (!posts) return;
+if (!pages) return;
 
+const home = pages.filter(page => 
+	page.slug === 'home'
+);
+home[0].slug = '/';
+home[0].title = 'Purported Art';
+
+const posts = await ghostClient.posts
+  .browse({ limit: 'all', 
+        filter: 'tag:painting' })
+  .catch((err) => {
+      console.error(err);
+  });
+if (!posts) return;
 posts.map((post) => {
-	const postSlug = post.slug;
-	post.slug = post.slug === 'home' ? '/' : `/${post.slug}`;
-	post.title = post.slug === '/' ? '◼︎' : postSlug;
+  post.slug = `paintings/${post.slug}`
 })
+
+const navItems = [...home, ...posts]
 import Navigation from '../components/Navigation';
 
 const { classes, title } = Astro.props;
@@ -32,11 +46,11 @@ const currentUrl = Astro.url.pathname;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{title ? `Purported Art - ${title}` : 'Purported Art'}</title>
 		<ViewTransitions />
 	</head>
 	<body class={`${classes} p-10`} transition:animate="none">
-		<Navigation data={posts} currentUrl={currentUrl} />
+		<Navigation data={currentUrl === '/' ? navItems : home} currentUrl={currentUrl} />
 		<div transition:animate={fade({ duration: '.5s' })}>
 			<slot/>
 		</div>
